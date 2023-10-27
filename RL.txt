@@ -1,0 +1,13 @@
+Choosen Value Iteration, as Policy Iteration is a special case of Value Iteration.
+Both included.
+
+First Visit and Every Visit are different: agent may visit a state more than once,
+even with the best policy.
+off policy methods often converge slower
+--textbook 5.5
+every-visit MC usually perform better when there is very limited number of trials
+it converges slower than first-visit MC when there is efficient number of trials
+"Singh and Sutton, 1996 Reinforcement Learning
+with Replacing Eligibility Traces"
+My choice: On policy First Visit soft policy
+
