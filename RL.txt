@@ -11,3 +11,23 @@ it converges slower than first-visit MC when there is efficient number of trials
 with Replacing Eligibility Traces"
 My choice: On policy First Visit soft policy
 
+Every Visit: 
+When the agent moves toward a undesired terminal state (-50 rewards).
+If the agent reached the terminal state, the value will be -50, last visit
+If the agent reached elsewhere, the value will be greater (between -8.3 and -50), earlier visit
+First visit MC considers the later value only if that state and node occurs multiple times
+the agent is less likely to learn from the rewards.
+
+epsilon value: trade-off, greater epsilon means more exploration but less exploitation
+smaller epsilon mean less exploration but more exploitation
+With more exploration: the agent tends to move randomly, more likely to reach every place.
+tends to show random behavior when far from terminal states, because the probability of selecting
+multiple optimal actions correctly is very unlikely (the probability decreases exponentially)
+
+With more exploitation: the agent's trace converges quickly and less likely to visit new un-desired
+terminal states, which leads to random behavior near unvisited undesired terminal states.
+
+Use a changing epsilon value to reduce the 
+
+Greater gamma is good with more randomness
+
